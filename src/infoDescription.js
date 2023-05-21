@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faThumbsUp, faThumbsDown, faShare, faArrowDown } from '@fortawesome/free-solid-svg-icons';
-
+import moment from 'moment';
 import logo from './img/ign-seeklogo.com.svg';
 
 const VideoTitle = styled.h1`
@@ -229,6 +229,8 @@ const Description = styled.p`
 `;
 
 const InfoDescription = () => {
+  const viewCount = 123000;
+  const timestamp = moment().subtract(6, 'months').fromNow();
   return (
     <TitleWrap>
       <VideoTitle>
@@ -275,7 +277,7 @@ const InfoDescription = () => {
       </InfoWrapper>
       <MoreInfo> 
         <ViewsTime>
-            123k views
+            {viewCount.toLocaleString()} views  {timestamp}
         </ViewsTime>
         <Description>
             Diablo IV's Game Director Joe Shely and Diablo General Manager Rod Fergusson tell us about finding   the right feel and pacing for Diablo IV's weighty combat.Show more
