@@ -13,7 +13,7 @@ const VideoTitle = styled.h1`
   color: #fff;
   margin-bottom: 5px;
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 0.9rem;
 `;
 
@@ -28,7 +28,7 @@ const TitleWrap = styled.div`
 const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-bottom: 5px;
   justify-content:space-between;
   flex-wrap:wrap;
@@ -187,7 +187,7 @@ const ThreeDot = styled.div`
   justify-content: center;
   width:30px;
   height:30px;
-  margin-right:1px;
+  margin-right:5px;
   border-radius:25px;
   padding:0 5px;
   background-color:  rgba(96, 96, 96, 0.5);
@@ -206,6 +206,26 @@ const Dot = styled.div`
   border-radius:50px;
   background-color:white;
   
+`;
+const MoreInfo = styled.div`
+  display:flex;
+  flex-direction:column;
+  background-color:  rgba(96, 96, 96, 0.5);
+  border-radius:5px;
+  margin:5px;
+  padding:5px;
+`;
+const ViewsTime = styled.p`
+  margin-top:0;
+  margin-bottom:5px;
+  color:white;
+  font-size:11px;
+`;
+const Description = styled.p`
+  margin-top:0;
+  margin-bottom:5px;
+  color:white;
+  font-size:11px;
 `;
 
 const InfoDescription = () => {
@@ -253,9 +273,14 @@ const InfoDescription = () => {
             </ThreeDot>
         </SocialInteraction>
       </InfoWrapper>
-      <div > 
-        rfjsrpgjepjg
-      </div>
+      <MoreInfo> 
+        <ViewsTime>
+            123k views
+        </ViewsTime>
+        <Description>
+            Diablo IV's Game Director Joe Shely and Diablo General Manager Rod Fergusson tell us about finding   the right feel and pacing for Diablo IV's weighty combat.Show more
+        </Description>
+      </MoreInfo>
     </TitleWrap>
   );
 };
