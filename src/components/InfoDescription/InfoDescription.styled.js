@@ -1,11 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faThumbsUp, faThumbsDown, faShare, faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import moment from 'moment';
-import logo from './img/ign-seeklogo.com.svg';
-
-const VideoTitle = styled.h1`
+export const VideoTitle = styled.h1`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,15 +11,14 @@ const VideoTitle = styled.h1`
   font-size: 0.9rem;
 `;
 
-const TitleWrap = styled.div`
+export const TitleWrap = styled.div`
   display:flex;
   flex-direction:column;
-  flex-wrap:wrap;
   width: 640px;
   background-color: black;
 `;
 
-const InfoWrapper = styled.div`
+export const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-left: 5px;
@@ -34,7 +27,7 @@ const InfoWrapper = styled.div`
   flex-wrap:wrap;
 `;
 
-const LogoWrapper = styled.div`
+export const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,30 +38,30 @@ const LogoWrapper = styled.div`
   overflow: hidden;
 `;
 
-const LogoImage = styled.img`
+export const LogoImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(124deg) brightness(1000%);
 `;
 
-const OwnerSubCount = styled.div`
+export const OwnerSubCount = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 10px;
 `;
 
-const Brand = styled.span`
+export const Brand = styled.span`
   color: #fff;
   font-size: 15px;
 `;
 
-const SubCount = styled.span`
+export const SubCount = styled.span`
   color: #fff;
   font-size: 10px;
 `;
 
-const SubscribeButton = styled.button`
+export const SubscribeButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +82,7 @@ const SubscribeButton = styled.button`
   }
 `;
 
-const Tup = styled.button`
+export const Tup = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +99,7 @@ const Tup = styled.button`
         color: #fff;
       }
 `;
-const Tdown = styled.button`
+export const Tdown = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,12 +126,12 @@ const Tdown = styled.button`
         right: 28px; 
       }
 `;
-const Owner = styled.div`
+export const Owner = styled.div`
     display:flex;
     align-items: center;
     justify-content: center;
 `;
-const ShareButton = styled.button`
+export const ShareButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,12 +150,12 @@ const ShareButton = styled.button`
     color: #fff;
 }
 `;
-const SocialInteraction = styled.div`
+export const SocialInteraction = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
 `;
-const Download = styled.button`
+export const Download = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,7 +174,7 @@ const Download = styled.button`
     color: #fff
 }
 `;
-const ThreeDot = styled.div`
+export const ThreeDot = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,14 +193,14 @@ const ThreeDot = styled.div`
     margin-right:5px;
   }
 `;
-const Dot = styled.div`
+export const Dot = styled.div`
   width:4px;
   height:4px;
   border-radius:50px;
   background-color:white;
   
 `;
-const MoreInfo = styled.div`
+export const MoreInfo = styled.div`
   display:flex;
   flex-direction:column;
   background-color:  rgba(96, 96, 96, 0.5);
@@ -215,78 +208,15 @@ const MoreInfo = styled.div`
   margin:5px;
   padding:5px;
 `;
-const ViewsTime = styled.p`
+export const ViewsTime = styled.p`
   margin-top:0;
   margin-bottom:5px;
   color:white;
   font-size:11px;
 `;
-const Description = styled.p`
+export const Description = styled.p`
   margin-top:0;
   margin-bottom:5px;
   color:white;
   font-size:11px;
 `;
-
-const InfoDescription = () => {
-  const viewCount = 123000;
-  const timestamp = moment().subtract(6, 'months').fromNow();
-  return (
-    <TitleWrap>
-      <VideoTitle>
-        How Diablo IV Is Bringing Its Power Fantasy Combat to Life
-      </VideoTitle>
-      <InfoWrapper>
-        <Owner>
-            <LogoWrapper>
-            <LogoImage src={logo} alt="IGN Logo" />
-            </LogoWrapper>
-            <OwnerSubCount>
-            <Brand>IGN</Brand>
-            <SubCount>17M subscribers</SubCount>
-            </OwnerSubCount>
-        
-        <SubscribeButton>
-          <FontAwesomeIcon icon={faBell} style={{ marginRight: '5px' }} />
-          Subscribe
-        </SubscribeButton>
-        </Owner>
-        <SocialInteraction>
-          <Tup>
-            <FontAwesomeIcon icon={faThumbsUp} style={{ marginRight: '5px' }} />
-            2k
-          </Tup>
-          <Tdown>
-            <FontAwesomeIcon icon={faThumbsDown} style={{ marginRight: '5px' }} />
-          </Tdown>
-        
-            <ShareButton>
-                <FontAwesomeIcon icon={faShare} style={{ marginRight: '5px' }} />
-                Share
-            </ShareButton>
-            <Download>
-                <FontAwesomeIcon icon={faArrowDown} style={{ marginRight: '5px' }} />
-                Download
-            </Download>
-            <ThreeDot>
-                <Dot></Dot>
-                <Dot></Dot>
-                <Dot></Dot>
-            </ThreeDot>
-        </SocialInteraction>
-      </InfoWrapper>
-      <MoreInfo> 
-        <ViewsTime>
-            {viewCount.toLocaleString()} views  {timestamp}
-        </ViewsTime>
-        <Description>
-            Diablo IV's Game Director Joe Shely and Diablo General Manager Rod Fergusson tell us about finding   the right feel and pacing for Diablo IV's weighty combat.Show more
-        </Description>
-      </MoreInfo>
-    </TitleWrap>
-  );
-};
-
-export default InfoDescription;
-
-
