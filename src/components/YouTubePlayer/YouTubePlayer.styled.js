@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import '../../fonts.css';
 export const YouTubePlayerWrapper = styled.div`
   display: flex;
   flex-direction: column;

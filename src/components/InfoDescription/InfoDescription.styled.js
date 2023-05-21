@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import '../../fonts.css';
 export const VideoTitle = styled.h1`
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@ export const VideoTitle = styled.h1`
   margin-top: 5px;
   margin-left: 5px;
   font-size: 0.9rem;
+  font-family: 'Roboto Light', sans-serif;
 `;
 
 export const TitleWrap = styled.div`
@@ -54,11 +56,13 @@ export const OwnerSubCount = styled.div`
 export const Brand = styled.span`
   color: #fff;
   font-size: 15px;
+  font-family: 'Roboto Light', sans-serif;
 `;
 
 export const SubCount = styled.span`
   color: #fff;
   font-size: 10px;
+  font-family: 'Roboto Light', sans-serif;
 `;
 
 export const SubscribeButton = styled.button`
@@ -69,6 +73,7 @@ export const SubscribeButton = styled.button`
   width: 120px;
   height: 30px;
   font-size: 11px;
+  font-family: 'Roboto Light', sans-serif;
   background-color: rgba(96, 96, 96, 0.5);
   color: #fff;
   border: none;
@@ -87,6 +92,7 @@ export const Tup = styled.button`
     align-items: center;
     justify-content: center;
     font-size: 11px;
+    font-family: 'Roboto Light', sans-serif;
     background-color: rgba(96, 96, 96, 0.5);
     color: #fff;
     border: none;
@@ -106,6 +112,7 @@ export const Tdown = styled.button`
     position: relative;
     margin-right:5px;
     font-size: 11px;
+    font-family: 'Roboto Light', sans-serif;
     background-color: rgba(96, 96, 96, 0.5);
     color: #fff;
     border: none;
@@ -141,6 +148,7 @@ export const ShareButton = styled.button`
   background-color:  rgba(96, 96, 96, 0.5);
   color: #fff;
   font-size: 11px;
+  font-family: 'Roboto Light', sans-serif;
   border: none;
   cursor: pointer;
   border-radius: 25px;
@@ -165,6 +173,7 @@ export const Download = styled.button`
   background-color:  rgba(96, 96, 96, 0.5);
   color: #fff;
   font-size: 11px;
+  font-family: 'Roboto Light', sans-serif;
   border: none;
   cursor: pointer;
   border-radius: 25px;
@@ -213,10 +222,12 @@ export const ViewsTime = styled.p`
   margin-bottom:5px;
   color:white;
   font-size:11px;
+  font-family: 'Roboto Light', sans-serif;
 `;
 export const Description = styled.p`
   margin-top:0;
   margin-bottom:5px;
   color:white;
   font-size:11px;
+  font-family: 'Roboto Light', sans-serif;
 `;
